@@ -18,9 +18,15 @@ Edit .env with all the correct variables, then run.
 ```sh
 $ source .env
 $ python manage.py migrate
+$ python manage.py runserver
+```
+Your app should now be running on [localhost:8000](http://localhost:8000/).
+
+If you have already install heroku toolbelt, which has foreman included, then
+you can use foreman and your app will be running on [localhost:5000](http://localhost:5000/).
+```sh
 $ foreman start
 ```
-Your app should now be running on [localhost:5000](http://localhost:5000/).
 
 ## Deploying to Heroku
 
